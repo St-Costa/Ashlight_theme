@@ -1,53 +1,168 @@
 :root {
-	--dark_theme-grey: #3E3E3E;
-	--dark_theme-darker-grey: #2E2E2E;
-	--dark_theme-orange: #FFA500;
-	--dark_theme-yellow: #FBFFAD;
-	--dark_theme-cyan: #7FCEF0;
+	/* DARK THEME */
+	--dark_theme-grey: 				#3E3E3E;
+	--dark_theme-darker-grey: 		#2E2E2E;
+	--dark_theme-white: 			#D7D7D7;
+	--dark_theme-orange: 			#FFA500;
+	--dark_theme-yellow: 			#FBFFAD;
+	--dark_theme-cyan: 				#7FCEF0;
+	--dark_theme-pink_selection:	#f291ff4f;
+
+	/* LIGHT THEME */
+	--light_theme_white: 			var(--dark_theme-white);
+	--light_theme_darker_white:		#BFBFBF;
+	--light_theme-grey:				var(--dark_theme-grey);
+	--light_theme_darker_grey:		var(--dark_theme-darker-grey);
+	--light_theme-blue: 			#0008FF;
+	--light_theme-red: 				#A30000;
+	--light_theme-green: 			#35990A;
+	--light_theme-pink_selection:	var(--dark_theme-pink_selection);
+
 }
+
+/*
+COMMON STUFF OUTSIDE THE CLASSES???
+*/	
 
 .theme-dark {
-	--background-primary: var(--dark_theme-grey);
+	--text-accent-hover: var(--dark_theme-white);
+
+	/* BACKGROUND */
+	--background-primary: 	var(--dark_theme-grey);
 	--background-secondary: var(--dark_theme-darker-grey);
 
-	--bold-color: var(--dark_theme-orange);
+	/* TEXT */
+	--text-normal: 			var(--dark_theme-white);
+	--bold-color: 			var(--dark_theme-orange);
+	--italic-color: 		var(--dark_theme-yellow);
+	--text-selection: 		var(--dark_theme-pink_selection);
+	--text-highlight-bg: 	var(--dark_theme-pink_selection);
 
-	--italic-color: var(--dark_theme-yellow);
+	/* --- */
+	/* LINK */
+	--link-decoration: 				none;
+	--link-decoration-hover: 		none;
 
-	--link-color: var(--dark_theme-cyan);
-	/* LINK CHE NO ESISTE */
+	/* Unresolved link */
+	--link-unresolved-color: 		var(--dark_theme-cyan);
+	--link-unresolved-opacity: 		0.8;
+	--link-unresolved-filter: 		blur(0.8px);
+
+	/* Internal link */
+	--link-color: 					var(--dark_theme-cyan);
+	--link-hover-color: 			var(--dark_theme-cyan);
+	
+	/* External link */
+	--link-external-color: 				var(--dark_theme-cyan);
+	--link-external-decoration: 		none;
+	--link-external-decoration-hover:	none;
+	/* --- */
 
 
-	--h1-color: #13c3e2;
-    --h2-color: #67a3e8;
-    --h3-color: #0d62ca;
-    --h4-color: #FFD700;
-    --h5-color: #800080;
-    --h6-color: #13c3e2;
+	/* HEADERS */
+	--h1-color: #4f9cfa;
+	--h2-color: #6aadff;
+	--h3-color: #86b5ee;
+	--h4-color: #9dbadf;
+	--h5-color: #cee8f1;
+	--h6-color: #ffffff;
 
+	/* CODE */
 	--code-background: var(--dark_theme-darker-grey);
-    --code-normal: red;
+    --code-normal: #A0FF90;
 
+	
+	/* ---*/
+	--color-base-00: red;							/* Color of search box in file explorer */
+	--color-base-05: red;
+	--color-base-10: var(--dark_theme-darker-grey); /* Color of message box */;
+	--color-base-20: red;
+	--color-base-25: var(--dark_theme-grey);		/* Color of writing inputs */
+	--color-base-30: var(--dark_theme-darker-grey); /* Color of lines, non-focus, open notes */
+	--color-base-50: var(--dark_theme-white); 		/* Color of name of title of non-focus, open note */
+	--color-base-60: red;
+	--color-base-70: var(--dark_theme-white); 		/* Color of icons, name of folders */
+	--color-base-100: var(--dark_theme-white); 		/* Color of normal text */
 }
 
-/* CODE BOLD
-NON VA IN PREVIEW
-*/
-code {
-	font-style: bold;
+.theme-light {
+	--text-accent-hover: var(--light_theme-grey);
+
+	/* BACKGROUND */
+	--background-primary: 	var(--light_theme_white);
+	--background-secondary: var(--light_theme_darker_white);
+	
+	/* TEXT */
+	--text-normal: 			var(--light_theme-grey);
+	--bold-color: 			var(--light_theme-blue);
+	--italic-color: 		var(--light_theme-red);
+	--text-selection: 		var(--light_theme-pink_selection);
+	--text-highlight-bg: 	var(--light_theme-pink_selection);
+
+	/* --- */
+	/* LINK */
+	--link-decoration: 				none;
+	--link-decoration-hover: 		none;
+
+	/* Unresolved link */
+	--link-unresolved-color: 		var(--light_theme-green);
+	--link-unresolved-opacity: 		0.8;
+	--link-unresolved-filter: 		blur(0.8px);
+
+	/* Internal link */
+	--link-color: 					var(--light_theme-green);
+	--link-hover-color: 			var(--light_theme-green);
+	
+	/* External link */
+	--link-external-color: 				var(--light_theme-green);
+	--link-external-decoration: 		none;
+	--link-external-decoration-hover:	none;
+	/* --- */
+
+
+	/* HEADERS */
+	--h1-color: #4f9cfa;
+	--h2-color: #6aadff;
+	--h3-color: #86b5ee;
+	--h4-color: #9dbadf;
+	--h5-color: #cee8f1;
+	--h6-color: #ffffff;
+
+	/* CODE */
+	--code-background: var(--light_theme_darker_grey);
+    --code-normal: #A0FF90;
+
+	
+	/* ---*/
+	--color-base-00: var(--light_theme-white);		/* Color of search box in file explorer */
+	--color-base-05: red;
+	--color-base-10: var(--light_theme_darker_grey); /* Color of message box */;
+	--color-base-20: orange;
+	--color-base-25: var(--light_theme-grey);		/* Color of writing inputs */
+	--color-base-30: var(--light_theme_darker_grey); /* Color of lines, non-focus, open notes */
+	--color-base-50: var(--light_theme-white); 		/* Color of name of title of non-focus, open note */
+	--color-base-60: green;
+	--color-base-70: var(--light_theme-white); 		/* Color of icons, name of folders */
+	--color-base-100: var(--light_theme-white); 		/* Color of normal text */
 }
 
 /* External link */
 a.external-link {
-	text-decoration: none;
 	font-style: italic;
-	color: var(--dark_theme-cyan);
-}
-a.external-link:hover {
-	background-color: red;
-	text-decoration: none;
 }
 .external-link:after{
 	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='currentColor' fill='currentColor' viewBox='0 0 24 24'%3E%3Cpath d='M18.3643 15.5353L16.95 14.1211L18.3643 12.7069C20.3169 10.7543 20.3169 7.58847 18.3643 5.63585C16.4116 3.68323 13.2458 3.68323 11.2932 5.63585L9.87898 7.05007L8.46477 5.63585L9.87898 4.22164C12.6127 1.48797 17.0448 1.48797 19.7785 4.22164C22.5121 6.95531 22.5121 11.3875 19.7785 14.1211L18.3643 15.5353ZM15.5358 18.3638L14.1216 19.778C11.388 22.5117 6.9558 22.5117 4.22213 19.778C1.48846 17.0443 1.48846 12.6122 4.22213 9.87849L5.63634 8.46428L7.05055 9.87849L5.63634 11.2927C3.68372 13.2453 3.68372 16.4112 5.63634 18.3638C7.58896 20.3164 10.7548 20.3164 12.7074 18.3638L14.1216 16.9496L15.5358 18.3638ZM14.8287 7.75717L16.2429 9.17139L9.17187 16.2425L7.75766 14.8282L14.8287 7.75717Z'%3E%3C/path%3E%3C/svg%3E");
   background-color: currentColor;
+}
+
+/* H1 CENTER + SIZE */
+/* edit mode */
+.HyperMD-header.HyperMD-header-1 {
+	text-align: center;
+	font-size: 50px !important;
+}
+/* preview mode */
+.markdown-preview-view h1 {
+	text-align: center;
+	font-size: 50px !important;
 }
