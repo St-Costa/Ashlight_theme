@@ -60,27 +60,27 @@ COMMON STUFF OUTSIDE THE CLASSES???
 
 
 	/* HEADERS */
-	--h1-color: #4f9cfa;
-	--h2-color: #6aadff;
-	--h3-color: #86b5ee;
+	--h1-color: var(--dark_theme-white);
+	--h2-color: #9dbadf;
+	--h3-color: #9dbadf;
 	--h4-color: #9dbadf;
-	--h5-color: #cee8f1;
-	--h6-color: #ffffff;
+	--h5-color: #9dbadf;
+	--h6-color: #9dbadf;
 
 	/* CODE */
 	--code-background: var(--dark_theme-darker-grey);
     --code-normal: #A0FF90;
 
 	
-	/* ---*/
-	--color-base-00: red;							/* Color of search box in file explorer */
-	--color-base-05: red;
+	/* --- */
+	/* --color-base-00: red; */							/* Color of search box in file explorer */
+	/*--color-base-05: red;*/
 	--color-base-10: var(--dark_theme-darker-grey); /* Color of message box */;
-	--color-base-20: red;
+	/*--color-base-20: red;*/
 	--color-base-25: var(--dark_theme-grey);		/* Color of writing inputs */
 	--color-base-30: var(--dark_theme-darker-grey); /* Color of lines, non-focus, open notes */
 	--color-base-50: var(--dark_theme-white); 		/* Color of name of title of non-focus, open note */
-	--color-base-60: red;
+	/*--color-base-60: red;*/
 	--color-base-70: var(--dark_theme-white); 		/* Color of icons, name of folders */
 	--color-base-100: var(--dark_theme-white); 		/* Color of normal text */
 }
@@ -121,27 +121,27 @@ COMMON STUFF OUTSIDE THE CLASSES???
 
 
 	/* HEADERS */
-	--h1-color: #4f9cfa;
-	--h2-color: #6aadff;
-	--h3-color: #86b5ee;
-	--h4-color: #9dbadf;
-	--h5-color: #cee8f1;
-	--h6-color: #ffffff;
+	--h1-color: var(--light_theme-grey); 
+	--h2-color: var(--light_theme-grey);
+	--h3-color: var(--light_theme-grey);
+	--h4-color: var(--light_theme-grey);
+	--h5-color: var(--light_theme-grey);
+	--h6-color: var(--light_theme-grey);
 
 	/* CODE */
 	--code-background: var(--light_theme_darker_grey);
     --code-normal: #A0FF90;
 
 	
-	/* ---*/
+	/* --- */
 	--color-base-00: var(--light_theme-white);		/* Color of search box in file explorer */
-	--color-base-05: red;
+	--color-base-05: var(--light_theme-white);		/* Color of top bar */
 	--color-base-10: var(--light_theme_darker_grey); /* Color of message box */;
-	--color-base-20: orange;
+	/*--color-base-20: orange;*/
 	--color-base-25: var(--light_theme-grey);		/* Color of writing inputs */
 	--color-base-30: var(--light_theme_darker_grey); /* Color of lines, non-focus, open notes */
 	--color-base-50: var(--light_theme-white); 		/* Color of name of title of non-focus, open note */
-	--color-base-60: green;
+	/*--color-base-60: green;*/
 	--color-base-70: var(--light_theme-white); 		/* Color of icons, name of folders */
 	--color-base-100: var(--light_theme-white); 		/* Color of normal text */
 }
