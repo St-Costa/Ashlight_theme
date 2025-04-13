@@ -12,15 +12,21 @@ Click on the release.
 
 ![](./installation%20guide.png)
 
-A .zip will be dowloaded.
+You will find this:
 
-Unzip the folder.
+![](./release%20dowload.png)
 
-Put that folder into the folder: `YOUR_WAULT/.obsidian/themes/`
+Dowload `manifest.json` and `theme.css`.
 
-NOTE 1: the folder `.obsidian` is hidden! If you dont see it, you need to play with the settings of your file viewer!
+Put them in a folder called `Ashlight_theme`
 
-NOTE 2: the folder `themes` might not exist if you dont have any installed theme! In that case, simply create it!
+NOTE: is very important that the folder is called like that!
+
+Put the folder `Ashlight_theme` into the folder: `YOUR_WAULT/.obsidian/themes/`
+
+NOTE: the folder `.obsidian` is hidden! If you dont see it, you need to play with the settings of your file viewer!
+
+NOTE: the folder `themes` might not exist if you dont have any installed theme! In that case, simply create it!
 
 ## Dark mode
 ![](./Dark%20mode.png)
