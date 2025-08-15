@@ -61,7 +61,8 @@ COMMON STUFF OUTSIDE THE CLASSES???
 
 	/* HEADERS */
 	--h1-color: var(--dark_theme-white);
-	--h2-color: #9dbadf;
+	--h2-color: var(--dark_theme-white);
+	--h2-size: 2em;
 	--h3-color: #9dbadf;
 	--h4-color: #9dbadf;
 	--h5-color: #9dbadf;
