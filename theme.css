@@ -47,7 +47,7 @@ COMMON STUFF OUTSIDE THE CLASSES???
 	--link-unresolved-color: 		var(--dark_theme-cyan);
 	--link-unresolved-opacity: 		0.8;
 	--link-unresolved-filter: 		blur(0.8px);
-
+ 
 	/* Internal link */
 	--link-color: 					var(--dark_theme-cyan);
 	--link-hover-color: 			var(--dark_theme-cyan);
