@@ -1,36 +1,63 @@
+<h1 align="center">Ashlight</h1>
 
-# Ashlight theme
+<p align="center">
+  <em>A clean, high-contrast Obsidian theme built for readability.</em><br>
+</p>
 
-This is a simple theme based on my [website](https://st-costa.github.io/) design.
+<p align="center">
+  <img alt="Obsidian Theme" src="https://img.shields.io/badge/Obsidian-Theme-7C3AED?logo=obsidian&logoColor=white">
+  <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white">
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-blue"></a>
+</p>
 
-I focused on a clean layout with an emphasis on good contrast colors for better readability. 
+Ashlight is based on the design of my [personal website](https://github.com/St-Costa/stefanocosta.me). It favors a simple layout and deliberately high-contrast colors, so notes stay easy to read during long writing or reading sessions, in both light and dark mode.
 
-## How to install it
-On the right column, find "Release"
+## Screenshots
 
-Click on the release.
+<p align="center">
+  <img src="./assets/dark-mode.png" alt="Ashlight dark mode" width="80%">
+</p>
 
-![](./assets/installation-guide.png)
+<p align="center">
+  <img src="./assets/light-mode.png" alt="Ashlight light mode" width="80%">
+</p>
 
-You will find this:
+## Features
 
-![](./assets/release-download.png)
+- Distinct color palettes for dark and light mode, tuned for contrast rather than pure aesthetics
+- Centered, enlarged H1 headings for cleaner document titles
+- Custom colors for bold and italic text, internal/external/unresolved links, and inline code
+- A minimal, dependency-free `theme.css` — easy to read and easy to fork
 
-Dowload `manifest.json` and `theme.css`.
+## Installation
 
-Put them in a folder called `Ashlight_theme`
+### From Obsidian (recommended, once published)
 
-NOTE: is very important that the folder is called like that!
+1. Open **Settings → Appearance → Themes → Manage**
+2. Search for `Ashlight`
+3. Click **Install**, then **Use**
 
-Put the folder `Ashlight_theme` into the folder: `YOUR_WAULT/.obsidian/themes/`
+### Manual installation
 
-NOTE: the folder `.obsidian` is hidden! If you dont see it, you need to play with the settings of your file viewer!
+1. Go to the [Releases page](https://github.com/St-Costa/obsidian-ashlight/releases/latest) of this repository.
 
-NOTE: the folder `themes` might not exist if you dont have any installed theme! In that case, simply create it!
+   ![](./assets/installation-guide.png)
 
-## Dark mode
-![](./assets/dark-mode.png)
+2. Download `manifest.json` and `theme.css` from the latest release.
 
-## Light mode
-![](./assets/light-mode.png)
+   ![](./assets/release-download.png)
 
+3. Create a folder named exactly `Ashlight_theme` and place both files inside it.
+
+   > The folder name matters — Obsidian uses it to identify the theme.
+
+4. Move the `Ashlight_theme` folder into `<your vault>/.obsidian/themes/`.
+
+   > `.obsidian` is a hidden folder — you may need to enable "show hidden files" in your file explorer.
+   > If the `themes` folder doesn't exist yet, create it.
+
+5. In Obsidian, go to **Settings → Appearance → Themes**, and select **Ashlight**.
+
+## License
+
+Ashlight is released under the [MIT License](LICENSE).
