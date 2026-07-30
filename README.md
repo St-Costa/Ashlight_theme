@@ -10,11 +10,11 @@ On the right column, find "Release"
 
 Click on the release.
 
-![](./installation%20guide.png)
+![](./assets/installation-guide.png)
 
 You will find this:
 
-![](./release%20dowload.png)
+![](./assets/release-download.png)
 
 Dowload `manifest.json` and `theme.css`.
 
@@ -29,8 +29,8 @@ NOTE: the folder `.obsidian` is hidden! If you dont see it, you need to play wit
 NOTE: the folder `themes` might not exist if you dont have any installed theme! In that case, simply create it!
 
 ## Dark mode
-![](./Dark%20mode.png)
+![](./assets/dark-mode.png)
 
 ## Light mode
-![](./Light%20mode.png)
+![](./assets/light-mode.png)
 

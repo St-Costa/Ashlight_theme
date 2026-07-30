@@ -1,168 +1,152 @@
+/*
+ * Ashlight
+ * A clean, high-contrast Obsidian theme.
+ * https://github.com/St-Costa/Ashlight_theme
+ */
+
 :root {
-	/* DARK THEME */
-	--dark_theme-grey: 				#3E3E3E;
-	--dark_theme-darker-grey: 		#2E2E2E;
-	--dark_theme-white: 			#D7D7D7;
-	--dark_theme-orange: 			#FFA500;
-	--dark_theme-yellow: 			#FBFFAD;
-	--dark_theme-cyan: 				#7FCEF0;
-	--dark_theme-pink_selection:	#f291ff4f;
+	/* Shared palette */
+	--ashlight-code-green: #A0FF90;
+	--ashlight-header-blue: #9DBADF;
 
-	/* LIGHT THEME */
-	--light_theme_white: 			var(--dark_theme-white);
-	--light_theme_darker_white:		#BFBFBF;
-	--light_theme-grey:				var(--dark_theme-grey);
-	--light_theme_darker_grey:		var(--dark_theme-darker-grey);
-	--light_theme-blue: 			#0008FF;
-	--light_theme-red: 				#A30000;
-	--light_theme-green: 			#35990A;
-	--light_theme-pink_selection:	var(--dark_theme-pink_selection);
+	/* Dark theme palette */
+	--dark-theme-grey: #3E3E3E;
+	--dark-theme-darker-grey: #2E2E2E;
+	--dark-theme-white: #D7D7D7;
+	--dark-theme-orange: #FFA500;
+	--dark-theme-yellow: #FBFFAD;
+	--dark-theme-cyan: #7FCEF0;
+	--dark-theme-pink-selection: #F291FF4F;
 
+	/* Light theme palette */
+	--light-theme-white: var(--dark-theme-white);
+	--light-theme-darker-white: #BFBFBF;
+	--light-theme-grey: var(--dark-theme-grey);
+	--light-theme-darker-grey: var(--dark-theme-darker-grey);
+	--light-theme-blue: #0008FF;
+	--light-theme-red: #A30000;
+	--light-theme-green: #35990A;
+	--light-theme-pink-selection: var(--dark-theme-pink-selection);
 }
 
-/*
-COMMON STUFF OUTSIDE THE CLASSES???
-*/	
-
 .theme-dark {
-	--text-accent-hover: var(--dark_theme-white);
+	--text-accent-hover: var(--dark-theme-white);
 
-	/* BACKGROUND */
-	--background-primary: 	var(--dark_theme-grey);
-	--background-secondary: var(--dark_theme-darker-grey);
+	/* Background */
+	--background-primary: var(--dark-theme-grey);
+	--background-secondary: var(--dark-theme-darker-grey);
 
-	/* TEXT */
-	--text-normal: 			var(--dark_theme-white);
-	--bold-color: 			var(--dark_theme-orange);
-	--italic-color: 		var(--dark_theme-yellow);
-	--text-selection: 		var(--dark_theme-pink_selection);
-	--text-highlight-bg: 	var(--dark_theme-pink_selection);
+	/* Text */
+	--text-normal: var(--dark-theme-white);
+	--bold-color: var(--dark-theme-orange);
+	--italic-color: var(--dark-theme-yellow);
+	--text-selection: var(--dark-theme-pink-selection);
+	--text-highlight-bg: var(--dark-theme-pink-selection);
 
-	/* --- */
-	/* LINK */
-	--link-decoration: 				none;
-	--link-decoration-hover: 		none;
+	/* Links */
+	--link-decoration: none;
+	--link-decoration-hover: none;
 
-	/* Unresolved link */
-	--link-unresolved-color: 		var(--dark_theme-cyan);
-	--link-unresolved-opacity: 		0.8;
-	--link-unresolved-filter: 		blur(0.8px);
- 
-	/* Internal link */
-	--link-color: 					var(--dark_theme-cyan);
-	--link-hover-color: 			var(--dark_theme-cyan);
-	
-	/* External link */
-	--link-external-color: 				var(--dark_theme-cyan);
-	--link-external-decoration: 		none;
-	--link-external-decoration-hover:	none;
-	/* --- */
+	--link-unresolved-color: var(--dark-theme-cyan);
+	--link-unresolved-opacity: 0.8;
+	--link-unresolved-filter: blur(0.8px);
 
+	--link-color: var(--dark-theme-cyan);
+	--link-color-hover: var(--dark-theme-cyan);
 
-	/* HEADERS */
-	--h1-color: var(--dark_theme-white);
-	--h2-color: var(--dark_theme-white);
+	--link-external-color: var(--dark-theme-cyan);
+	--link-external-color-hover: var(--dark-theme-cyan);
+	--link-external-decoration: none;
+	--link-external-decoration-hover: none;
+
+	/* Headers */
+	--h1-color: var(--dark-theme-white);
+	--h2-color: var(--dark-theme-white);
 	--h2-size: 2em;
-	--h3-color: #9dbadf;
-	--h4-color: #9dbadf;
-	--h5-color: #9dbadf;
-	--h6-color: #9dbadf;
+	--h3-color: var(--ashlight-header-blue);
+	--h4-color: var(--ashlight-header-blue);
+	--h5-color: var(--ashlight-header-blue);
+	--h6-color: var(--ashlight-header-blue);
 
-	/* CODE */
-	--code-background: var(--dark_theme-darker-grey);
-    --code-normal: #A0FF90;
+	/* Code */
+	--code-background: var(--dark-theme-darker-grey);
+	--code-normal: var(--ashlight-code-green);
 
-	
-	/* --- */
-	/* --color-base-00: red; */							/* Color of search box in file explorer */
-	/*--color-base-05: red;*/
-	--color-base-10: var(--dark_theme-darker-grey); /* Color of message box */;
-	/*--color-base-20: red;*/
-	--color-base-25: var(--dark_theme-grey);		/* Color of writing inputs */
-	--color-base-30: var(--dark_theme-darker-grey); /* Color of lines, non-focus, open notes */
-	--color-base-50: var(--dark_theme-white); 		/* Color of name of title of non-focus, open note */
-	/*--color-base-60: red;*/
-	--color-base-70: var(--dark_theme-white); 		/* Color of icons, name of folders */
-	--color-base-100: var(--dark_theme-white); 		/* Color of normal text */
+	/* Base colors */
+	--color-base-10: var(--dark-theme-darker-grey); /* Message box */
+	--color-base-25: var(--dark-theme-grey); /* Writing inputs */
+	--color-base-30: var(--dark-theme-darker-grey); /* Lines, non-focused open notes */
+	--color-base-50: var(--dark-theme-white); /* Title of non-focused open note */
+	--color-base-70: var(--dark-theme-white); /* Icons, folder names */
+	--color-base-100: var(--dark-theme-white); /* Normal text */
 }
 
 .theme-light {
-	--text-accent-hover: var(--light_theme-grey);
+	--text-accent-hover: var(--light-theme-grey);
 
-	/* BACKGROUND */
-	--background-primary: 	var(--light_theme_white);
-	--background-secondary: var(--light_theme_darker_white);
-	
-	/* TEXT */
-	--text-normal: 			var(--light_theme-grey);
-	--bold-color: 			var(--light_theme-blue);
-	--italic-color: 		var(--light_theme-red);
-	--text-selection: 		var(--light_theme-pink_selection);
-	--text-highlight-bg: 	var(--light_theme-pink_selection);
+	/* Background */
+	--background-primary: var(--light-theme-white);
+	--background-secondary: var(--light-theme-darker-white);
 
-	/* --- */
-	/* LINK */
-	--link-decoration: 				none;
-	--link-decoration-hover: 		none;
+	/* Text */
+	--text-normal: var(--light-theme-grey);
+	--bold-color: var(--light-theme-blue);
+	--italic-color: var(--light-theme-red);
+	--text-selection: var(--light-theme-pink-selection);
+	--text-highlight-bg: var(--light-theme-pink-selection);
 
-	/* Unresolved link */
-	--link-unresolved-color: 		var(--light_theme-green);
-	--link-unresolved-opacity: 		0.8;
-	--link-unresolved-filter: 		blur(0.8px);
+	/* Links */
+	--link-decoration: none;
+	--link-decoration-hover: none;
 
-	/* Internal link */
-	--link-color: 					var(--light_theme-green);
-	--link-hover-color: 			var(--light_theme-green);
-	
-	/* External link */
-	--link-external-color: 				var(--light_theme-green);
-	--link-external-decoration: 		none;
-	--link-external-decoration-hover:	none;
-	/* --- */
+	--link-unresolved-color: var(--light-theme-green);
+	--link-unresolved-opacity: 0.8;
+	--link-unresolved-filter: blur(0.8px);
 
+	--link-color: var(--light-theme-green);
+	--link-color-hover: var(--light-theme-green);
 
-	/* HEADERS */
-	--h1-color: var(--light_theme-grey); 
-	--h2-color: var(--light_theme-grey);
-	--h3-color: var(--light_theme-grey);
-	--h4-color: var(--light_theme-grey);
-	--h5-color: var(--light_theme-grey);
-	--h6-color: var(--light_theme-grey);
+	--link-external-color: var(--light-theme-green);
+	--link-external-color-hover: var(--light-theme-green);
+	--link-external-decoration: none;
+	--link-external-decoration-hover: none;
 
-	/* CODE */
-	--code-background: var(--light_theme_darker_grey);
-    --code-normal: #A0FF90;
+	/* Headers */
+	--h1-color: var(--light-theme-grey);
+	--h2-color: var(--light-theme-grey);
+	--h2-size: 2em;
+	--h3-color: var(--light-theme-grey);
+	--h4-color: var(--light-theme-grey);
+	--h5-color: var(--light-theme-grey);
+	--h6-color: var(--light-theme-grey);
 
-	
-	/* --- */
-	--color-base-00: var(--light_theme-white);		/* Color of search box in file explorer */
-	--color-base-05: var(--light_theme-white);		/* Color of top bar */
-	--color-base-10: var(--light_theme_darker_grey); /* Color of message box */;
-	/*--color-base-20: orange;*/
-	--color-base-25: var(--light_theme-grey);		/* Color of writing inputs */
-	--color-base-30: var(--light_theme_darker_grey); /* Color of lines, non-focus, open notes */
-	--color-base-50: var(--light_theme-white); 		/* Color of name of title of non-focus, open note */
-	/*--color-base-60: green;*/
-	--color-base-70: var(--light_theme-white); 		/* Color of icons, name of folders */
-	--color-base-100: var(--light_theme-white); 		/* Color of normal text */
+	/* Code */
+	--code-background: var(--light-theme-darker-grey);
+	--code-normal: var(--ashlight-code-green);
+
+	/* Base colors */
+	--color-base-00: var(--light-theme-white); /* Search box in file explorer */
+	--color-base-05: var(--light-theme-white); /* Top bar */
+	--color-base-10: var(--light-theme-darker-grey); /* Message box */
+	--color-base-25: var(--light-theme-grey); /* Writing inputs */
+	--color-base-30: var(--light-theme-darker-grey); /* Lines, non-focused open notes */
+	--color-base-50: var(--light-theme-white); /* Title of non-focused open note */
+	--color-base-70: var(--light-theme-white); /* Icons, folder names */
+	--color-base-100: var(--light-theme-white); /* Normal text */
 }
 
-/* External link */
+/* External link icon and style */
 a.external-link {
 	font-style: italic;
 }
-.external-link:after{
+
+.external-link::after {
 	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='currentColor' fill='currentColor' viewBox='0 0 24 24'%3E%3Cpath d='M18.3643 15.5353L16.95 14.1211L18.3643 12.7069C20.3169 10.7543 20.3169 7.58847 18.3643 5.63585C16.4116 3.68323 13.2458 3.68323 11.2932 5.63585L9.87898 7.05007L8.46477 5.63585L9.87898 4.22164C12.6127 1.48797 17.0448 1.48797 19.7785 4.22164C22.5121 6.95531 22.5121 11.3875 19.7785 14.1211L18.3643 15.5353ZM15.5358 18.3638L14.1216 19.778C11.388 22.5117 6.9558 22.5117 4.22213 19.778C1.48846 17.0443 1.48846 12.6122 4.22213 9.87849L5.63634 8.46428L7.05055 9.87849L5.63634 11.2927C3.68372 13.2453 3.68372 16.4112 5.63634 18.3638C7.58896 20.3164 10.7548 20.3164 12.7074 18.3638L14.1216 16.9496L15.5358 18.3638ZM14.8287 7.75717L16.2429 9.17139L9.17187 16.2425L7.75766 14.8282L14.8287 7.75717Z'%3E%3C/path%3E%3C/svg%3E");
-  background-color: currentColor;
+	background-color: currentColor;
 }
 
-/* H1 CENTER + SIZE */
-/* edit mode */
-.HyperMD-header.HyperMD-header-1 {
-	text-align: center;
-	font-size: 50px !important;
-}
-/* preview mode */
+/* H1: centered and enlarged, in both edit and preview mode */
+.HyperMD-header.HyperMD-header-1,
 .markdown-preview-view h1 {
 	text-align: center;
 	font-size: 50px !important;
